@@ -8,6 +8,8 @@
             // Aquí el nostre codi
             // Canviarem el color del text amb JavaScript
             let txt = document.getElementById("text");
+            let vermell = false;
+
 
             function canviaColor()
             {
@@ -16,7 +18,12 @@
                 // 2) Canvia el seu style.color a "red"
                 // (Extra) prova també "blue" o "green"
 
+                if (vermell) {
+                    txt.style.color = "black";    
+                } else {
                 txt.style.color = "red";
+                }
+                vermell = !vermell;
             }
         </script>
     </body>
